@@ -1,0 +1,13 @@
+import pandas as pd
+import numpy as np
+
+df = pd.read_excel('concrete.xls')
+
+df.columns = ['cement', 'blast_furnace_slag', 'fly_ash', 'water',
+               'superplasticizer', 'coarse_aggregate', 'fine_aggregate',
+               'age_days', 'compressive_strength']
+
+df.shape
+df.dtypes
+df.isnull().sum()
+df.describe()
